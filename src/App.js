@@ -1,8 +1,8 @@
 import Sidebar from './components/Sidebar/Sidebar';
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { addTask } from './redux/taskSlice';
 import Dashboard from './components/Dashboard/Dashboard';
+import { addTask } from './redux/taskSlice';
 import AddTask from './components/AddTask/AddTask';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
           {popupOpen && (
             <AddTask
             onAdd={handleAdd}
-            OnClose={() => setPopupOpen(false)}
+            onClose={() => setPopupOpen(false)}
             />
           )}
       </div>

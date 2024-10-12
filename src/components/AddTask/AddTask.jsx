@@ -2,7 +2,7 @@ import React from 'react'
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-const AddTask = ({onAdd, OnClose}) => {
+const AddTask = ({onAdd, onClose}) => {
     const [title,setTitle] = React.useState('');
     const [description, setDescription] = React.useState('');
     const [image, setImage] = React.useState(null);
@@ -26,7 +26,7 @@ const AddTask = ({onAdd, OnClose}) => {
         setImage(null);
         setEstimatedTime('');
         setDueDate(null);
-        
+        onClose();
       };
     
       const handleImageChange = (e) => {
@@ -87,7 +87,7 @@ const AddTask = ({onAdd, OnClose}) => {
             <button
               type="button"
               className="bg-purple-300 text-white px-4 py-2 rounded"
-              
+              onClick={onClose}
             >
               Cancel
             </button>

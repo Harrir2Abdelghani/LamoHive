@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../Assets/logo.jpg'
-const Sidebar = () => {
+import AddTask from '../AddTask/AddTask';
+const Sidebar = ({onAdd}) => {
     const [isOpen, setIsOpen] = React.useState(false);
     const [popupOpen, setPopupOpen] = React.useState(false);
     const handleAdd = () =>{
@@ -41,7 +42,12 @@ const Sidebar = () => {
           {isOpen ? '❎' : '☰'}
         </button>
       </div>
-      
+      {popupOpen && (
+        <AddTask
+          onAdd={onAdd} 
+          onClose={() => setPopupOpen(false)} 
+        />
+      )}
     </div>
   )
 }
