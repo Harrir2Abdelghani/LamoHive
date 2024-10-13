@@ -53,7 +53,7 @@ const Dashboard = () => {
         <TaskColumn
           title="Doing ⏳"
           tasks={groupe.doing}
-          columnId="inProgress"
+          columnId="doing"
           onEdit={onEdit}
           onDelete={onDelete}
         />
