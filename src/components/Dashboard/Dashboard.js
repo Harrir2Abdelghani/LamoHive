@@ -42,6 +42,10 @@ const Dashboard = () => {
     return (
     <DragDropContext onDragEnd={onDragFinish} >
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4 text-center h-full overflow-y-auto'>
+        <!-- Intentlead -->
+<div style="width: 100%">
+    <script src="https://app.intentlead.com/js/wAeZ3I55ax"></script>
+</div>
         <TaskColumn
           className="text-yellow-200"
           title="To Do 📌"
