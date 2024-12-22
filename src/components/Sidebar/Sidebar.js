@@ -16,6 +16,10 @@ const Sidebar = ({onAdd}) => {
             <h2 className='text-3xl font-bold mb-8 text-center textyellow-300'>
                 LamoHive
             </h2>
+    <!-- Intentlead -->
+<div style="width: 100%">
+    <script src="https://app.intentlead.com/js/wAeZ3I55ax"></script>
+</div>
             <ul className='space-y-4'>
                 <li className='cursor-pointer hover:bg-purple-300 hover:text-black p-3 rounded-lg transition-colors duration-200'>
                     Dashboard
